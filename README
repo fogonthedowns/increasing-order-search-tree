@@ -1,0 +1,21 @@
+Increasing Order Search Tree
+
+Input: root = [5,3,6,2,4,null,8,1,null,null,null,7,9]
+Output: [1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]
+
+Input: root = [5,1,7]
+Output: [1,null,5,null,7]
+
+
+Solution: In Order Traversal of a binary tree
+1. initialize a new pointer to TreeNode
+2. define inOrder
+   a. traverse root.Left
+   b. set prev.Left to nil. flip, right.Val with root.Val, using pointer created in (1)
+   c. traverse root.Right
+3. return ans.Right
+
+O(n), O(n) time and space complexity where N is the number of nodes in a tree
+
+
+
